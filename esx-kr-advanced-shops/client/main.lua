@@ -522,7 +522,7 @@ function TakeItem(number)
 
 	for i=1, #result, 1 do
 	    if result[i].count > 0 then
-	    	table.insert(elements, {label = result[i].label .. ' | ' .. result[i].count ..' stycken i lager [' .. result[i].price .. ' kr/styck]', value = 'removeitem', ItemName = result[i].item})
+	    	table.insert(elements, {label = result[i].label .. ' | ' .. result[i].count ..' pieces in storage [' .. result[i].price .. ' $ per piece', value = 'removeitem', ItemName = result[i].item})
 	    end
     end
 
@@ -570,7 +570,7 @@ function PutItem(number)
       local invitem = result.items[i]
       
 	    if invitem.count > 0 then
-			table.insert(elements, { label = invitem.label .. ' | ' .. invitem.count .. ' din rycksäck', count = invitem.count, name = invitem.name})
+			table.insert(elements, { label = invitem.label .. ' | ' .. invitem.count .. ' in your bag', count = invitem.count, name = invitem.name})
 	    end
 	end
 
