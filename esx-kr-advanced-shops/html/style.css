@@ -164,13 +164,6 @@ h2 {
   text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
 }
 
-.skrivstil {
-  font: 100 100px/1.3 'Arizonia', Helvetica, sans-serif;
-  background-color: #181818;
-  color: #ffffff;
-  text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
-}
-
 #leftblock {
   display: none;
   height: 900px;
@@ -190,11 +183,6 @@ h2 {
   background-color: rgb(143, 143, 143);
 }
 
-.room-block {
-  height: 100px;
-  width: 100px;
-  background-color: rgb(89, 87, 190);
-}
 
 /* width */
 ::-webkit-scrollbar {
