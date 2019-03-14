@@ -839,8 +839,6 @@ function Robbery(id)
         ESX.TriggerServerCallback('esx_kr_shop-robbery:getUpdates', function(result)
 		ESX.TriggerServerCallback('esx_kr_shop-robbery:getOnlinePolices', function(results)
 
-			print(results)
-			print(Config.RequiredPolices)
 			if result.cb ~= nil then
 				if results >= Config.RequiredPolices then
                 TriggerServerEvent('esx_kr_shops-robbery:UpdateCanRob', id)
