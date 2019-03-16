@@ -894,7 +894,7 @@ Citizen.CreateThread(function()
 				elseif OnRobbery and GetDistanceBetweenCoords(playerpos.x, playerpos.y, playerpos.z, Coordss.x, Coordss.y, Coordss.z, true) >= 15 then
 					OnRobbery = false
 					DeleteEntity(Var)
-					TriggerServerEvent('esx_kr_shops-robbery:NotifyOwner', "~g~The robbery on your shop ~b~(" .. Name .. ')~g~ was not successful!', Od)
+					TriggerServerEvent('esx_kr_shops-robbery:NotifyOwner', "~g~The robbery on your shop ~b~(" .. Name .. ')~g~ was not successful!', Id)
 					ESX.ShowNotification(_U("robbery_cancel"))	
 				end
 	end
