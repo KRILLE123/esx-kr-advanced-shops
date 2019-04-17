@@ -17,6 +17,7 @@ client_scripts {
   'config.lua',
   'client/main.lua',
   '@es_extended/locale.lua',
+  'locales/de.lua',
   'locales/en.lua',
   'locales/fr.lua',	
   'locales/sv.lua',
