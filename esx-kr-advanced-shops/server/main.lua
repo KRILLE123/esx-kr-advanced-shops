@@ -154,6 +154,8 @@ AddEventHandler('esx_kr_shops:Buy', function(id, Item, ItemCount)
                 TriggerClientEvent('esx:showNotification', src, '~r~You don\'t have enough money.')
             elseif ItemCount <= 0 then
                 TriggerClientEvent('esx:showNotification', src, '~r~invalid quantity.')
+			      elseif sourceItem.limit ~= -1 and (sourceItem.count + ItemCount) > sourceItem.limit then
+				        TriggerClientEvent('esx:showNotification', src, '~r~you do ~r~not~s~ have enough ~y~free space~s~, ~r~max is : '..sourceItem.limit.. ' for '..Item)
             else
                 xPlayer.removeMoney(ItemCount * result[1].price)
                 TriggerClientEvent('esx:showNotification', xPlayer.source, '~g~You bought ' .. ItemCount .. 'x ' .. Item .. ' for $' .. ItemCount * result[1].price)
